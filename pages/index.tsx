@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
+import Nav from '../src/nav'
 
 const Home: NextPage = () => {
   return (
     <div>
-      Hello World
+      <Nav/>
+      
     </div>
   )
 }
