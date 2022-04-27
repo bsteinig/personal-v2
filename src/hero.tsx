@@ -23,7 +23,7 @@ function Hero() {
 
   useEffect(() => {
     const typed = new Typed('#typed-text', {
-        strings: ["software", "web", "ml+ai", "software"],
+        strings: ["<span class='grad1'>software</span>", "<span class='grad2'>web</span>", "<span class='grad3'>ml+ai</span>", "<span class='grad1'>software</span>"],
         startDelay: 100,
         backSpeed: 40,
         typeSpeed: 70,
@@ -68,14 +68,14 @@ function Hero() {
             Ben Steinig.
           </Heading>
           <button onClick={() => {setType(!Type)}}>
-            <Heading align={'left'}
+            <Heading
+                align={'left'}
                 lineHeight={1.0}
                 fontWeight={700}
                 fontSize={{ base: "4xl", sm: "5xl", lg: "6xl" }}
-                className={styles.gradient}
             >
                 I&apos;m a&nbsp;
-                <span id="typed-text">software</span>
+                <span id="typed-text" className="grad">software</span>
                 <br />
                 developer.
             </Heading>
